@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <title>BS5 Crash Course</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"> <img src="img/bootstrap-logo.svg" width="35" height="30" alt="Logo" class="d-inline-block align-text-bottom"> WPAC</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house"></i> Home</a>
+                        <a class="nav-link" href="#services"><i class="bi bi-tools"></i> Services</a>
+                        <a class="nav-link" href="#projects"><i class="bi bi-briefcase"></i> Projects</a>
+                        <a class="nav-link" href="#pricing"><i class="bi bi-currency-dollar"></i> Pricing</a>
+                        <a class="nav-link d-lg-none" href="#"><i class="bi bi-envelope"></i> Contact Us</a>
+                    </div>
+                </div>
+                <div class="nav-callout d-none d-lg-block">
+                    <a href="#" class="btn btn-warning"><i class="bi bi-envelope"></i> Contact Us</a>
+                    <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginPopup"><i class="bi bi-people-fill"></i> Login / Signup</a>
+                </div>
+            </div>
+          </nav>
+            <!-- Modal -->
+            <div class="modal fade" id="loginPopup" tabindex="-1" aria-labelledby="loginSignupPopup" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginSignupPopup">Login or Signup</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="user-email"><i class="bi bi-at"></i></span>
+                            <input type="text" class="form-control" placeholder="Email Address" aria-label="Email" aria-describedby="user-email">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="user-password"><i class="bi bi-lock"></i></span>
+                            <input type="password" class="form-control" placeholder="Password" aria-label="Email" aria-describedby="user-password">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success">Sign-in</button>
+                        <button type="button" class="btn btn-primary">Create Account</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <div class="container-fluid px-0">
+        <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                
+                <div class="carousel-item active">
+                    <div class="overlay"></div>
+                    <img src="img/slide-1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <h1 class="display-1 text-uppercase fw-bold">Web Design</h1>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet rem sapiente provident assumenda facere odio id corrupti illum ipsum numquam quod, dicta itaque consectetur nemo laudantium asperiores non dolor perferendis? </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="overlay"></div>
+                    <img src="img/slide-2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <h1 class="display-1 text-uppercase fw-bold">The Branding</h1>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet rem sapiente provident assumenda facere odio id corrupti illum ipsum numquam quod, dicta itaque consectetur nemo laudantium asperiores non dolor perferendis? </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="overlay"></div>
+                    <img src="img/slide-3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <h1 class="display-1 text-uppercase fw-bold">Mobile Apps</h1>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet rem sapiente provident assumenda facere odio id corrupti illum ipsum numquam quod, dicta itaque consectetur nemo laudantium asperiores non dolor perferendis? </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="overlay"></div>
+                    <img src="img/slide-4.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <h1 class="display-1 text-uppercase fw-bold">Ran on Top</h1>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet rem sapiente provident assumenda facere odio id corrupti illum ipsum numquam quod, dicta itaque consectetur nemo laudantium asperiores non dolor perferendis? </p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div><!--// Main Slider-->
+    </div><!-- // Slider Container -->
+    <div id="services" class="container mt-5 mb-5">
+        <div class="services-text-row row text-center">
+            <div class="services-title-text">
+                <h2 class="text-uppercase fw-bold display-5">Our Services</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A maxime excepturi vitae consequatur mollitia quia id soluta reprehenderit aspernatur quis voluptate saepe placeat, dicta expedita tempora optio. Ipsum, fugit cumque.</p>
+            </div>
+        </div>
+        <div class="services-boxes-row row text-center mt-5 mb-4">
+            <div class="col-12 col-sm-6 col-lg-3 service-col">
+                <div class="service-col-inner">
+                    <img src="img/icon-1.png" alt="Service 1">
+                    <h4>Mobile Apps</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 service-col">
+                <div class="service-col-inner">
+                    <img src="img/icon-2.png" alt="Service 1">
+                    <h4>Branding</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 service-col">
+                <div class="service-col-inner">
+                    <img src="img/icon-3.png" alt="Service 1">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 service-col">
+                <div class="service-col-inner">
+                    <img src="img/icon-4.png" alt="Service 1">
+                    <h4>S.E.O</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+    </div><!-- // Services Section -->
+
+    <div id="projects" class="container mt-5 mb-5">
+        <div class="projects-text-row row text-center">
+            <div class="section-title-text">
+                <h2 class="text-uppercase fw-bold display-5">Our Projects</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A maxime excepturi vitae consequatur mollitia quia id soluta reprehenderit aspernatur quis voluptate saepe placeat, dicta expedita tempora optio. Ipsum, fugit cumque.</p>
+            </div>
+        </div>
+        <div class="projects-container row mt-3 mb-5">
+            <ul class="nav nav-pills justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" href="javascript:" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all-tab" aria-selected="true">All Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:" data-bs-toggle="tab" data-bs-target="#webdesign" type="button" role="tab" aria-controls="webdesign-tab" aria-selected="false">Web Design</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:" data-bs-toggle="tab" data-bs-target="#branding" type="button" role="tab" aria-controls="all-tab" aria-selected="false">Branding</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:" data-bs-toggle="tab" data-bs-target="#mobile" type="button" role="tab" aria-controls="mobile-tab" aria-selected="false">Mobile Apps</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:" data-bs-toggle="tab" data-bs-target="#seo" type="button" role="tab" aria-controls="seo-tab" aria-selected="false">S.E.O</a>
+                </li>
+            </ul>
+            <div class="tab-content mt-5">
+                <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                    <div class="row projects-gallery g-3">
+                        <div class="project-thumbnail col-12 col-sm-6 col-md-4">
+                            <img src="img/project-1.jpg" alt="Project 1" class="img-fluid rounded">
+                        </div>
+                        <div class="project-thumbnail col-12 col-sm-6 col-md-4">
+                            <img src="img/project-2.jpg" alt="Project 1" class="img-fluid rounded">
+                        </div>
+                        <div class="project-thumbnail col-12 col-sm-6 col-md-4">
+                            <img src="img/project-3.jpg" alt="Project 1" class="img-fluid rounded">
+                        </div>
+                        <div class="project-thumbnail col-12 col-sm-6 col-md-4">
+                            <img src="img/project-4.jpg" alt="Project 1" class="img-fluid rounded">
+                        </div>
+                        <div class="project-thumbnail col-12 col-sm-6 col-md-4">
+                            <img src="img/project-5.jpg" alt="Project 1" class="img-fluid rounded">
+                        </div>
+                        <div class="project-thumbnail col-12 col-sm-6 col-md-4">
+                            <img src="img/project-6.jpg" alt="Project 1" class="img-fluid rounded">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="webdesign" role="tabpanel" aria-labelledby="webdesign-tab">
+                    <div class="row projects-gallery g-3">
+                        <div class="project-thumbnail col-12 col-sm-6 col-md-4">
+                            <img src="img/project-1.jpg" alt="Project 1" class="img-fluid rounded">
+                        </div>
+                        <div class="project-thumbnail col-12 col-sm-6 col-md-4">
+                            <img src="img/project-2.jpg" alt="Project 1" class="img-fluid rounded">
+                        </div>
+                        <div class="project-thumbnail col-12 col-sm-6 col-md-4">
+                            <img src="img/project-3.jpg" alt="Project 1" class="img-fluid rounded">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="branding" role="tabpanel" aria-labelledby="branding-tab">
+                    <div class="row projects-gallery g-3">
+                        <div class="project-thumbnail col-12 col-sm-6 col-md-4">
+                            <img src="img/project-4.jpg" alt="Project 1" class="img-fluid rounded">
+                        </div>
+                        <div class="project-thumbnail col-12 col-sm-6 col-md-4">
+                            <img src="img/project-5.jpg" alt="Project 1" class="img-fluid rounded">
+                        </div>
+                        <div class="project-thumbnail col-12 col-sm-6 col-md-4">
+                            <img src="img/project-6.jpg" alt="Project 1" class="img-fluid rounded">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="mobile" role="tabpanel" aria-labelledby="mobile-tab">
+                    <div class="row projects-gallery g-3">
+                        <div class="project-thumbnail col-12 col-sm-6 col-md-4">
+                            <img src="img/project-1.jpg" alt="Project 1" class="img-fluid rounded">
+                        </div>
+                        <div class="project-thumbnail col-12 col-sm-6 col-md-4">
+                            <img src="img/project-4.jpg" alt="Project 1" class="img-fluid rounded">
+                        </div>
+                        <div class="project-thumbnail col-12 col-sm-6 col-md-4">
+                            <img src="img/project-5.jpg" alt="Project 1" class="img-fluid rounded">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="seo" role="tabpanel" aria-labelledby="seo-tab">
+                    <div class="row projects-gallery g-3">
+                        <div class="project-thumbnail col-12 col-sm-6 col-md-4">
+                            <img src="img/project-1.jpg" alt="Project 1" class="img-fluid rounded">
+                        </div>
+                        <div class="project-thumbnail col-12 col-sm-6 col-md-4">
+                            <img src="img/project-2.jpg" alt="Project 1" class="img-fluid rounded">
+                        </div>
+                        <div class="project-thumbnail col-12 col-sm-6 col-md-4">
+                            <img src="img/project-3.jpg" alt="Project 1" class="img-fluid rounded">
+                        </div>
+                        <div class="project-thumbnail col-12 col-sm-6 col-md-4">
+                            <img src="img/project-4.jpg" alt="Project 1" class="img-fluid rounded">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- // Projects Section -->
+    <div id="pricing" class="container mt-5 mb-5">
+        <div class="pricing-text-row row text-center">
+            <div class="section-title-text">
+                <h2 class="text-uppercase fw-bold display-5">Our Pricing</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A maxime excepturi vitae consequatur mollitia quia id soluta reprehenderit aspernatur quis voluptate saepe placeat, dicta expedita tempora optio. Ipsum, fugit cumque.</p>
+            </div>
+        </div>
+        <div class="pricing-boxes-row row text-center mt-5 mb-4">
+            <div class="pricing-table col-12 col-md-4">
+                <table class="table table-striped table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th><h2 class="text-uppercase fw-bold mb-0">Starter</h2></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><h3><span class="fw-bold">$19.99</span> / <small>Month</small></h3></td>
+                        </tr>
+                        <tr>
+                            <td>Branding</td>
+                        </tr>
+                        <tr>
+                            <td>Web Design</td>
+                        </tr>
+                        <tr>
+                            <td>S.E.O</td>
+                        </tr>
+                        <tr>
+                            <td>24/7 Support</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>
+                                <div class="d-grid">
+                                    <button type="button" class="btn btn-outline-primary btn-lg">Get Started</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="pricing-table col-12 col-md-4">
+                <table class="table table-striped table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th><h2 class="text-uppercase fw-bold mb-0">Business</h2></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><h3><span class="fw-bold">$29.99</span> / <small>Month</small></h3></td>
+                        </tr>
+                        <tr>
+                            <td>Branding</td>
+                        </tr>
+                        <tr>
+                            <td>Web Design</td>
+                        </tr>
+                        <tr>
+                            <td>S.E.O</td>
+                        </tr>
+                        <tr>
+                            <td>24/7 Support</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>
+                                <div class="d-grid">
+                                    <button type="button" class="btn btn-outline-primary btn-lg">Get Started</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="pricing-table col-12 col-md-4">
+                <table class="table table-striped table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th><h2 class="text-uppercase fw-bold mb-0">Agency</h2></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><h3><span class="fw-bold">$39.99</span> / <small>Month</small></h3></td>
+                        </tr>
+                        <tr>
+                            <td>Branding</td>
+                        </tr>
+                        <tr>
+                            <td>Web Design</td>
+                        </tr>
+                        <tr>
+                            <td>S.E.O</td>
+                        </tr>
+                        <tr>
+                            <td>24/7 Support</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>
+                                <div class="d-grid">
+                                    <button type="button" class="btn btn-outline-primary btn-lg">Get Started</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div><!-- // Services Section -->
+    <footer class="bg-dark pt-5 pb-5 text-white">
+        <div class="container">
+            <div class="row footer-cols">
+                <div class="footer-col col-12 col-sm-12 col-md-6 col-lg-3">
+                    <h3 class="widget-title">About Us</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab rerum cum eveniet reprehenderit nostrum. Molestias velit aut ea laborum. Officiis molestias explicabo distinctio cum consequuntur labore, repellendus eveniet sunt ab?</p>
+                </div>
+                <div class="footer-col col-12 col-sm-12 col-md-6 col-lg-3">
+                    <h3 class="widget-title">Site Links</h3>
+                    <ul>
+                        <li><a href="#">Site Link 1</a></li>
+                        <li><a href="#">Site Link 2</a></li>
+                        <li><a href="#">Site Link 3</a></li>
+                        <li><a href="#">Site Link 4</a></li>
+                        <li><a href="#">Site Link 5</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col col-12 col-sm-12 col-md-6 col-lg-3">
+                    <h3 class="widget-title">External Links</h3>
+                    <ul>
+                        <li><a href="#">External Link 1</a></li>
+                        <li><a href="#">External Link 2</a></li>
+                        <li><a href="#">External Link 3</a></li>
+                        <li><a href="#">External Link 4</a></li>
+                        <li><a href="#">External Link 5</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col col-12 col-sm-12 col-md-6 col-lg-3">
+                    <h3 class="widget-title">Categories</h3>
+                    <ul>
+                        <li><a href="#">Category 1</a></li>
+                        <li><a href="#">Category 2</a></li>
+                        <li><a href="#">Category 3</a></li>
+                        <li><a href="#">Category 4</a></li>
+                        <li><a href="#">Category 5</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

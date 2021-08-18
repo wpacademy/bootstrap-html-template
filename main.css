@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&display=swap');
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Poppins', sans-serif;
+}
+/**
+* Header & Nav
+*/
+.navbar {
+    --bs-bg-opacity: .2;
+}
+.navbar.sticky {
+    --bs-bg-opacity: .9;
+}
+.navbar-dark .navbar-nav .nav-link {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+/**
+* Carousel Styling
+*/
+.carousel-item {
+    height: 800px;
+}
+
+.carousel-item img {
+    object-fit: cover;
+}
+.carousel-caption {
+    bottom: 30%;
+}
+.carousel-caption h1 {
+    text-shadow: 0px 5px 10px #000;
+}
+.carousel .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 99;
+}
+.carousel-indicators, .carousel-item, .carousel-caption, .carousel-control-next, .carousel-control-prev {
+    z-index: 100;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-color: rgba(0,0,0,0.95);
+    padding: 30px;
+    border-radius: 5px;
+    display: inline-block;
+    background-size: 40px 40px;
+}
+@media screen and (max-width: 768px) {
+    .carousel-item {
+        height: 500px;
+    }
+    .carousel-item img {
+        height: 100%;
+    }
+    .carousel-caption {
+        bottom: 20%;
+    }
+    .carousel-caption p {
+        font-size: 14px;
+    }
+}
+/**
+* Services Section Styling
+*/
+.section-title-text {
+    margin: 0 auto;
+    max-width: 800px;
+}
+.service-col-inner {
+    padding: 20px;
+    border: 1px solid #ededed;
+    border-radius: 10px;
+}
+.service-col img {
+    max-width: 120px;
+    margin-bottom: 10px;
+}
+.service-col h4 {
+    font-size: 24px;
+}
+.service-col p {
+    font-size: 14px;
+}
+/**
+* Footer
+*/
+.footer-col p {
+    font-size: 16px;
+}
+.footer-col ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.footer-col ul li {
+    margin-bottom: 6px;
+}
+.footer-col ul li a, .footer-col a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+.footer-col a:hover {
+    color: royalblue;
+}
